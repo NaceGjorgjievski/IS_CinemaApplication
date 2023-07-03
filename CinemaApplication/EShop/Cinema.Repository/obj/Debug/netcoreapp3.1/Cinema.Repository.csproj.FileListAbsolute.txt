@@ -1,0 +1,24 @@
+C:\Users\Nace\Desktop\CinemaApplication\EShop\Cinema.Repository\bin\Debug\netcoreapp3.1\Cinema.Repository.deps.json
+C:\Users\Nace\Desktop\CinemaApplication\EShop\Cinema.Repository\bin\Debug\netcoreapp3.1\Cinema.Repository.dll
+C:\Users\Nace\Desktop\CinemaApplication\EShop\Cinema.Repository\bin\Debug\netcoreapp3.1\Cinema.Repository.pdb
+C:\Users\Nace\Desktop\CinemaApplication\EShop\Cinema.Repository\bin\Debug\netcoreapp3.1\Cinema.Domain.dll
+C:\Users\Nace\Desktop\CinemaApplication\EShop\Cinema.Repository\bin\Debug\netcoreapp3.1\Cinema.Domain.pdb
+C:\Users\Nace\Desktop\CinemaApplication\EShop\Cinema.Repository\obj\Debug\netcoreapp3.1\Cinema.Repository.csproj.AssemblyReference.cache
+C:\Users\Nace\Desktop\CinemaApplication\EShop\Cinema.Repository\obj\Debug\netcoreapp3.1\Cinema.Repository.AssemblyInfoInputs.cache
+C:\Users\Nace\Desktop\CinemaApplication\EShop\Cinema.Repository\obj\Debug\netcoreapp3.1\Cinema.Repository.AssemblyInfo.cs
+C:\Users\Nace\Desktop\CinemaApplication\EShop\Cinema.Repository\obj\Debug\netcoreapp3.1\Cinema.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Nace\Desktop\CinemaApplication\EShop\Cinema.Repository\obj\Debug\netcoreapp3.1\Cinema.Repository.csproj.CopyComplete
+C:\Users\Nace\Desktop\CinemaApplication\EShop\Cinema.Repository\obj\Debug\netcoreapp3.1\Cinema.Repository.dll
+C:\Users\Nace\Desktop\CinemaApplication\EShop\Cinema.Repository\obj\Debug\netcoreapp3.1\Cinema.Repository.pdb
+C:\Users\Nace\Desktop\CinemaApplication - Copy (4)\EShop\Cinema.Repository\bin\Debug\netcoreapp3.1\Cinema.Repository.deps.json
+C:\Users\Nace\Desktop\CinemaApplication - Copy (4)\EShop\Cinema.Repository\bin\Debug\netcoreapp3.1\Cinema.Repository.dll
+C:\Users\Nace\Desktop\CinemaApplication - Copy (4)\EShop\Cinema.Repository\bin\Debug\netcoreapp3.1\Cinema.Repository.pdb
+C:\Users\Nace\Desktop\CinemaApplication - Copy (4)\EShop\Cinema.Repository\bin\Debug\netcoreapp3.1\Cinema.Domain.dll
+C:\Users\Nace\Desktop\CinemaApplication - Copy (4)\EShop\Cinema.Repository\bin\Debug\netcoreapp3.1\Cinema.Domain.pdb
+C:\Users\Nace\Desktop\CinemaApplication - Copy (4)\EShop\Cinema.Repository\obj\Debug\netcoreapp3.1\Cinema.Repository.csproj.AssemblyReference.cache
+C:\Users\Nace\Desktop\CinemaApplication - Copy (4)\EShop\Cinema.Repository\obj\Debug\netcoreapp3.1\Cinema.Repository.AssemblyInfoInputs.cache
+C:\Users\Nace\Desktop\CinemaApplication - Copy (4)\EShop\Cinema.Repository\obj\Debug\netcoreapp3.1\Cinema.Repository.AssemblyInfo.cs
+C:\Users\Nace\Desktop\CinemaApplication - Copy (4)\EShop\Cinema.Repository\obj\Debug\netcoreapp3.1\Cinema.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Nace\Desktop\CinemaApplication - Copy (4)\EShop\Cinema.Repository\obj\Debug\netcoreapp3.1\Cinema.Repository.csproj.CopyComplete
+C:\Users\Nace\Desktop\CinemaApplication - Copy (4)\EShop\Cinema.Repository\obj\Debug\netcoreapp3.1\Cinema.Repository.dll
+C:\Users\Nace\Desktop\CinemaApplication - Copy (4)\EShop\Cinema.Repository\obj\Debug\netcoreapp3.1\Cinema.Repository.pdb

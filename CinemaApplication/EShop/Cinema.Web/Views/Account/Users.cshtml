@@ -1,0 +1,87 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model List<Cinema.Domain.Identity.CinemaApplicationUser>
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<Cinema.Domain.Identity.CinemaApplicationUser> SignInManager
+@inject UserManager<Cinema.Domain.Identity.CinemaApplicationUser> UserManager
+@{
+    ViewData["Title"] = "Users";
+    var userRoles = ViewData["UserRoles"] as List<string>;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    @if (SignInManager.IsSignedIn(User) && User.HasClaim("UserRole", "Admin"))
+    {
+        <div class="row m-4">
+            <form method="post" asp-controller="Account" asp-action="ImportUsers" enctype="multipart/form-data" class="w-100 d-flex justify-content-end align-items-center">
+                <div class="form-group w-25 d-flex justify-content-center align-items-center" style="margin:0px;margin-right:15px;">
+                    <input type="file" name="file" class="form-control" />
+                </div>
+
+                <button type="submit" class="btn btn-success">Import Excel</button>
+            </form>
+        </div>
+    }
+
+    <div class="row m-4">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name Surname</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Count == 0)
+                {
+                    <tr>
+                        <td colspan="5">No active Users</td>
+                    </tr>
+                }
+                else
+                {
+                    @for (int i = 0; i < Model.Count; i++)
+                    {
+                        var item = Model[i];
+
+                        <tr>
+                            <th style="vertical-align:middle" scope="row">@(i + 1)</th>
+                            <td style="vertical-align:middle">@item.FirstName @item.LastName</td>
+                            <td style="vertical-align:middle">@item.Email</td>
+                            <td style="vertical-align:middle">@userRoles[i]</td>
+                            @if (userRoles[i].Equals("StandardUser"))
+                            {
+                                 <td>
+                                     <a asp-controller="Account" asp-action="SetAdmin" asp-route-id="@item.Id" class="btn btn-secondary">Set Role to Admin</a>
+                                    @if (SignInManager.IsSignedIn(User) && User.HasClaim("UserRole", "Admin"))
+                                    {
+                                        <a asp-controller="Account" asp-action="RemoveUser" asp-route-id="@item.Id" class="btn btn-danger" style="margin-left:10px">Remove</a>
+                                    }
+                                 </td>
+                            }
+                            else
+                            {
+                                <td>
+                                    <a asp-controller="Account" asp-action="SetStandardUser" asp-route-id="@item.Id" class="btn btn-secondary">Set Role to Standard User</a>
+
+                                    @if (SignInManager.IsSignedIn(User) && User.HasClaim("UserRole", "Admin"))
+                                    {
+                                        <a asp-controller="Account" asp-action="RemoveUser" asp-route-id="@item.Id" class="btn btn-danger" style="margin-left:10px">Remove</a>
+                                    }
+                                </td>
+                            }
+                     
+                        </tr>
+                    }
+                }
+            </tbody>
+          
+        </table>
+    </div>
+</div>

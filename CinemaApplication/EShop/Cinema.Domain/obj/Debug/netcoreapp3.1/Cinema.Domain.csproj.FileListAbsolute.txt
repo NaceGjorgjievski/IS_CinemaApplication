@@ -1,0 +1,18 @@
+C:\Users\Nace\Desktop\CinemaApplication\EShop\Cinema.Domain\bin\Debug\netcoreapp3.1\Cinema.Domain.deps.json
+C:\Users\Nace\Desktop\CinemaApplication\EShop\Cinema.Domain\bin\Debug\netcoreapp3.1\Cinema.Domain.dll
+C:\Users\Nace\Desktop\CinemaApplication\EShop\Cinema.Domain\bin\Debug\netcoreapp3.1\Cinema.Domain.pdb
+C:\Users\Nace\Desktop\CinemaApplication\EShop\Cinema.Domain\obj\Debug\netcoreapp3.1\Cinema.Domain.csproj.AssemblyReference.cache
+C:\Users\Nace\Desktop\CinemaApplication\EShop\Cinema.Domain\obj\Debug\netcoreapp3.1\Cinema.Domain.AssemblyInfoInputs.cache
+C:\Users\Nace\Desktop\CinemaApplication\EShop\Cinema.Domain\obj\Debug\netcoreapp3.1\Cinema.Domain.AssemblyInfo.cs
+C:\Users\Nace\Desktop\CinemaApplication\EShop\Cinema.Domain\obj\Debug\netcoreapp3.1\Cinema.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Nace\Desktop\CinemaApplication\EShop\Cinema.Domain\obj\Debug\netcoreapp3.1\Cinema.Domain.dll
+C:\Users\Nace\Desktop\CinemaApplication\EShop\Cinema.Domain\obj\Debug\netcoreapp3.1\Cinema.Domain.pdb
+C:\Users\Nace\Desktop\CinemaApplication - Copy (4)\EShop\Cinema.Domain\bin\Debug\netcoreapp3.1\Cinema.Domain.deps.json
+C:\Users\Nace\Desktop\CinemaApplication - Copy (4)\EShop\Cinema.Domain\bin\Debug\netcoreapp3.1\Cinema.Domain.dll
+C:\Users\Nace\Desktop\CinemaApplication - Copy (4)\EShop\Cinema.Domain\bin\Debug\netcoreapp3.1\Cinema.Domain.pdb
+C:\Users\Nace\Desktop\CinemaApplication - Copy (4)\EShop\Cinema.Domain\obj\Debug\netcoreapp3.1\Cinema.Domain.csproj.AssemblyReference.cache
+C:\Users\Nace\Desktop\CinemaApplication - Copy (4)\EShop\Cinema.Domain\obj\Debug\netcoreapp3.1\Cinema.Domain.AssemblyInfoInputs.cache
+C:\Users\Nace\Desktop\CinemaApplication - Copy (4)\EShop\Cinema.Domain\obj\Debug\netcoreapp3.1\Cinema.Domain.AssemblyInfo.cs
+C:\Users\Nace\Desktop\CinemaApplication - Copy (4)\EShop\Cinema.Domain\obj\Debug\netcoreapp3.1\Cinema.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Nace\Desktop\CinemaApplication - Copy (4)\EShop\Cinema.Domain\obj\Debug\netcoreapp3.1\Cinema.Domain.dll
+C:\Users\Nace\Desktop\CinemaApplication - Copy (4)\EShop\Cinema.Domain\obj\Debug\netcoreapp3.1\Cinema.Domain.pdb

@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Cinema.Domain.DomainModels.Ticket>
+
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    //var categories = ViewData["Categories"];
+    var cat = ViewData["CategoryId"];
+}
+
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<Cinema.Domain.Identity.CinemaApplicationUser> SignInManager
+@inject UserManager<Cinema.Domain.Identity.CinemaApplicationUser> UserManager
+
+<div class="container pb-5 mt-5">
+    @if (SignInManager.IsSignedIn(User) && User.HasClaim("UserRole", "Admin"))
+    {
+        <div class="row justify-content-between">
+            <a class="btn btn-success" asp-action="Create">Insert New Product</a>
+            <div>
+                <form method="post" class="d-flex">
+                    <label  class="control-label"></label>
+                    <select class="form-control" asp-items="@ViewBag.CategoryId" name="categoryId">
+                    </select>
+                    <button type="submit" class="btn btn-success">Export</button>
+                </form>
+            </div>
+        </div>
+    }
+    <h2 class="text-center">Tickets</h2>
+
+    <div class="row">
+        <form class="d-flex w-100 align-items-center justify-content-end">
+            <label for="startTime" style="margin-right:15px">Valid:</label>
+            <input class="form-control=" style="width:300px;margin-right:15px;" type="datetime-local" id="startTime" name="startTime">
+            <button type="submit" class="btn btn-primary">Филтрирај</button>
+        </form>
+    </div>
+
+    <div class="d-flex flex-wrap justify-content-between m-3">
+        @foreach (var item in Model)
+        {
+
+            <div class="card m-2 p-2" style="width:30%">
+                <img src="@Html.DisplayFor(modelItem => item.MovieImage)" class="card-img-top" style="height:60%" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">@Html.DisplayFor(modelItem => item.MovieName)</h5>
+                    <p> @Html.DisplayFor(modelItem => item.MovieCategory.CategoryName)</p>
+                    <h5 class="card-title">Date: @Html.DisplayFor(modelItem => item.MovieTime.Day).@Html.DisplayFor(modelItem => item.MovieTime.Month).@Html.DisplayFor(modelItem => item.MovieTime.Year)</h5>
+                    <h5 class="card-title">Starting Time: @Html.DisplayFor(modelItem => item.MovieTime.TimeOfDay)</h5>
+                    <h5 class="card-text">Price: $@Html.DisplayFor(modelItem => item.Price)</h5>
+                </div>
+                <div class="card-footer">
+                    <a asp-controller="Tickets" asp-action="AddTicketToCart" asp-route-id="@item.Id" class="btn btn-info">Add to cart</a>
+                    @if (SignInManager.IsSignedIn(User) && User.HasClaim("UserRole", "Admin"))
+                    {
+                        <a asp-controller="Tickets" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary">Edit</a>
+                        <a asp-controller="Tickets" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Remove</a>
+                    }
+                </div>
+            </div>
+
+        }
+    </div>
+
+</div>
+
