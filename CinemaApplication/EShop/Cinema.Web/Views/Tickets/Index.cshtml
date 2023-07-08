@@ -51,7 +51,11 @@
                     <h5 class="card-text">Price: $@Html.DisplayFor(modelItem => item.Price)</h5>
                 </div>
                 <div class="card-footer">
-                    <a asp-controller="Tickets" asp-action="AddTicketToCart" asp-route-id="@item.Id" class="btn btn-info">Add to cart</a>
+                     @if (SignInManager.IsSignedIn(User))
+                    {
+                        <a asp-controller="Tickets" asp-action="AddTicketToCart" asp-route-id="@item.Id" class="btn btn-info">Add to cart</a>
+                    }
+                    
                     @if (SignInManager.IsSignedIn(User) && User.HasClaim("UserRole", "Admin"))
                     {
                         <a asp-controller="Tickets" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary">Edit</a>
